@@ -1,16 +1,20 @@
 package com.example.maryambaig.orzanis.Dao;
 
-import android.graphics.Paint;
 
-import com.example.maryambaig.orzanis.Entity.User;
+import com.example.maryambaig.orzanis.Entity.User_Location;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * Created by MaryamBaig on 6/1/2017.
  */
 public class UserDao {
 
-    public void get_location(User user)
-    {
+    DatabaseReference database=FirebaseDatabase.getInstance().getReference();
+
+    public void addtoDatabase(String Username,User_Location info){
+
+
 
     }
 

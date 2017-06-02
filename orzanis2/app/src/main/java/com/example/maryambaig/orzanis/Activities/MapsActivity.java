@@ -9,7 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
-import com.example.maryambaig.orzanis.Entity.User;
+import com.example.maryambaig.orzanis.Dao.UserDao;
+
 import com.example.maryambaig.orzanis.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -19,6 +20,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -50,22 +52,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     textview.setText("location is" + latitude + ", " + longitude + ".");
                     Geocoder gcd = new Geocoder(getApplicationContext(), Locale.getDefault());
                     List<Address> address = null;
-                    User user=new User();
 
                     try {
                         address = gcd.getFromLocation(latitude, longitude, 1);
-                        user.setAddress(address.get(0));
-                        user.setLatitude(latitude);
-                        user.setLongitude(longitude);
 
-                        LatLng current = new LatLng(latitude, longitude);
-                        mMap.addMarker(new MarkerOptions().position(current).title("Marker in" +
-                        address.get(0).getLocality()));
-                        mMap.moveCamera(CameraUpdateFactory.newLatLng(current));
                     } catch (IOException e) {
                         e.printStackTrace();
 
                     }
+
                 }
                 else
                 {
