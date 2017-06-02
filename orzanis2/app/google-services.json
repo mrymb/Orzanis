@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "853974292248",
+    "firebase_url": "https://orzanis-f4c07.firebaseio.com",
+    "project_id": "orzanis-f4c07",
+    "storage_bucket": "orzanis-f4c07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853974292248:android:22b88af65528050b",
+        "android_client_info": {
+          "package_name": "com.example.maryambaig.orzanis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853974292248-h1ilm8b895uo58nk37a3c34gld6gm0c0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.maryambaig.orzanis",
+            "certificate_hash": "88e3086bc9725849dc37fc9d82a8b143230ef0ec"
+          }
+        },
+        {
+          "client_id": "853974292248-n2d8n8um75s7j407q6cueesuj4mc5sl4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF78XSPUWoDgbNigQ2DlLFl3aK30ahX9U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853974292248-n2d8n8um75s7j407q6cueesuj4mc5sl4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
