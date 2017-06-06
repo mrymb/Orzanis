@@ -57,6 +57,8 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         if(v==textViewSignin)
         {
             //will open signin activity
+            Intent intent=new Intent(this,LoginActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -84,8 +86,9 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(SignupActivity.this,"Registered Successfully!",Toast.LENGTH_SHORT).show();
-                            Intent intent=new Intent(getApplicationContext(), MapsActivity.class);
+                            Intent intent=new Intent(getApplicationContext(),MainActivity.class);
                             startActivity(intent);
+
                         }
                         else
                         {

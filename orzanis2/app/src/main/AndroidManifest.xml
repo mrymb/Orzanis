@@ -15,6 +15,8 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -36,8 +38,8 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Activities.MapsActivity"
-            android:label="@string/title_activity_maps">
+            android:name=".Activities.SignupActivity"
+            android:label="Sign up">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,8 +48,10 @@
         </activity>
         <activity
             android:name=".Activities.LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity android:name=".Activities.SignupActivity" />
+            android:label="Sign in" />
+        <activity android:name=".Activities.MainActivity"
+            android:label="Orzanis"/>
+
     </application>
 
 </manifest>

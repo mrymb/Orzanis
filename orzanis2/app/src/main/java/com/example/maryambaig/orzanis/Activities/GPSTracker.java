@@ -23,7 +23,7 @@ public class GPSTracker extends Service implements LocationListener {
     private Context mcontext;
     boolean isGPSenabled = false;
     boolean isNetworkEnabled = false;
-    boolean canGetLocation = false;
+    public boolean canGetLocation = false;
     Location location;
     double latitude;
     double longitude;
